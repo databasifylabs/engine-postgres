@@ -1,0 +1,119 @@
+{
+  "registry": "ghcr.io/databasifylabs",
+  "sdk": "0.2.0",
+  "go": {
+    "image": "golang",
+    "tag": "1.27.3-trixie",
+    "digest": "sha256:af1bfc2614ebb1dbd31af514b78740fd678850e76498762b425ecee4c5c6ea80"
+  },
+  "images": {
+    "postgres-18": {
+      "engine": "postgres",
+      "line": "18",
+      "release": "18.6",
+      "base": {
+        "image": "postgres",
+        "tag": "18.6-trixie",
+        "digest": "sha256:e3d24f6906d0760bf4da0dae872415391ededefad23fd471c47dc53b0ddf3c42"
+      },
+      "copies": {
+        "etcd": {
+          "image": "quay.io/coreos/etcd",
+          "tag": "v3.6.16",
+          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+        }
+      },
+      "packages": {
+        "patroni": "4.1.5-2.pgdg13+1",
+        "python3-etcd": "0.4.5-6",
+        "pgbouncer": "1.26.1-1.pgdg13+1",
+        "pgbackrest": "2.60.0-1.pgdg13+1",
+        "iproute2": "6.15.0-1",
+        "jq": "1.7.1-6+deb13u4",
+        "curl": "8.14.1-2+deb13u7",
+        "ca-certificates": "20250419+deb13u1"
+      }
+    },
+    "postgres-17": {
+      "engine": "postgres",
+      "line": "17",
+      "release": "17.11",
+      "base": {
+        "image": "postgres",
+        "tag": "17.11-trixie",
+        "digest": "sha256:ff87138949ad9a46f32ff23bd6852b52ce024a13dffe9b4087be98292cdd3b4f"
+      },
+      "copies": {
+        "etcd": {
+          "image": "quay.io/coreos/etcd",
+          "tag": "v3.6.16",
+          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+        }
+      },
+      "packages": {
+        "patroni": "4.1.5-2.pgdg13+1",
+        "python3-etcd": "0.4.5-6",
+        "pgbouncer": "1.26.1-1.pgdg13+1",
+        "pgbackrest": "2.60.0-1.pgdg13+1",
+        "iproute2": "6.15.0-1",
+        "jq": "1.7.1-6+deb13u4",
+        "curl": "8.14.1-2+deb13u7",
+        "ca-certificates": "20250419+deb13u1"
+      }
+    },
+    "postgres-16": {
+      "engine": "postgres",
+      "line": "16",
+      "release": "16.15",
+      "base": {
+        "image": "postgres",
+        "tag": "16.15-trixie",
+        "digest": "sha256:f9a7b9ebf6f56201f949db745e47bc423c0f0f8294bafe991cc10bf74b029657"
+      },
+      "copies": {
+        "etcd": {
+          "image": "quay.io/coreos/etcd",
+          "tag": "v3.6.16",
+          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+        }
+      },
+      "packages": {
+        "patroni": "4.1.5-2.pgdg13+1",
+        "python3-etcd": "0.4.5-6",
+        "pgbouncer": "1.26.1-1.pgdg13+1",
+        "pgbackrest": "2.60.0-1.pgdg13+1",
+        "iproute2": "6.15.0-1",
+        "jq": "1.7.1-6+deb13u4",
+        "curl": "8.14.1-2+deb13u7",
+        "ca-certificates": "20250419+deb13u1"
+      }
+    },
+    "postgres-15": {
+      "engine": "postgres",
+      "line": "15",
+      "release": "15.19",
+      "base": {
+        "image": "postgres",
+        "tag": "15.19-trixie",
+        "digest": "sha256:1aac5b49cefd627f02816141ca4ad012d6cc19460dfe02a9b5168a105be3fc53"
+      },
+      "copies": {
+        "etcd": {
+          "image": "quay.io/coreos/etcd",
+          "tag": "v3.6.16",
+          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+        }
+      },
+      "packages": {
+        "patroni": "4.1.5-2.pgdg13+1",
+        "python3-etcd": "0.4.5-6",
+        "pgbouncer": "1.26.1-1.pgdg13+1",
+        "pgbackrest": "2.60.0-1.pgdg13+1",
+        "iproute2": "6.15.0-1",
+        "jq": "1.7.1-6+deb13u4",
+        "curl": "8.14.1-2+deb13u7",
+        "ca-certificates": "20250419+deb13u1"
+      }
+    }
+  }
+}

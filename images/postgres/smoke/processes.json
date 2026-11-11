@@ -1,0 +1,12 @@
+{
+  "processes": [
+    {"name": "prepare", "type": "oneshot", "enabled": true, "argv": ["install", "-d", "-o", "postgres", "-g", "postgres", "-m", "700", "/srv/postgres/data", "/srv/postgres/run"]},
+    {"name": "initdb", "type": "oneshot", "enabled": true, "after": ["prepare"], "user": "postgres",
+     "argv": ["sh", "-c", "[ -s /srv/postgres/data/PG_VERSION ] || exec initdb --pgdata=/srv/postgres/data --username=postgres --auth=trust"]},
+    {"name": "server", "enabled": true, "after": ["initdb"], "user": "postgres", "restart": "always", "restartSec": "2s", "stopSignal": "SIGINT", "stopTimeout": "30s",
+     "argv": ["postgres", "-D", "/srv/postgres/data", "-c", "config_file=/srv/postgres/conf/postgresql.conf"]}
+  ],
+  "schedules": [
+    {"name": "probe", "every": "1h", "argv": ["true"]}
+  ]
+}
