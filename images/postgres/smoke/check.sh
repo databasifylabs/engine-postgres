@@ -13,5 +13,5 @@ pgbouncer --version | sed -n 1p
 pgbackrest version
 etcd --version | sed -n 1p
 etcdctl version | sed -n 1p
-echo "postgres $DATABASIFY_RELEASE answered through the wrapper"
+echo "postgres $DATABASIFY_RELEASE runs under the databasify supervisor"
 [ "$(id -u postgres)" = 64999 ] && [ "$(id -g postgres)" = 64999 ]
