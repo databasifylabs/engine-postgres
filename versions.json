@@ -9,13 +9,13 @@
       "base": {
         "image": "postgres",
         "tag": "18.7-trixie",
-        "digest": "sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc"
+        "digest": "sha256:eb63372c1e05c755f55fa30cbd07aecc443676fc6c0fa90b9002d01537841e1a"
       },
       "copies": {
         "etcd": {
           "image": "quay.io/coreos/etcd",
-          "tag": "v3.6.16",
-          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+          "tag": "v3.6.17",
+          "digest": "sha256:316f5d367455f75a327f9dc72f669cbf645651859fa2e272f692a1f2dee6f5c9"
         }
       },
       "packages": {
@@ -122,13 +122,13 @@
       "base": {
         "image": "postgres",
         "tag": "17.12-trixie",
-        "digest": "sha256:0d938e975177bef9f1f61f3f9dbcf2e0aa0a139568f66d3415ed8892eb97f6ac"
+        "digest": "sha256:223efeb196329b55b3b9a13db144956411dbc18e727e59f681c3e0aede6475cf"
       },
       "copies": {
         "etcd": {
           "image": "quay.io/coreos/etcd",
-          "tag": "v3.6.16",
-          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+          "tag": "v3.6.17",
+          "digest": "sha256:316f5d367455f75a327f9dc72f669cbf645651859fa2e272f692a1f2dee6f5c9"
         }
       },
       "packages": {
@@ -234,13 +234,13 @@
       "base": {
         "image": "postgres",
         "tag": "16.16-trixie",
-        "digest": "sha256:dd2bf3ce2dc83a81674cf7f217fcfd8a5009a4b325dda5b843bfee82a06cff6f"
+        "digest": "sha256:3950ad7c3148ca2175ef1b6c36c9efbf78957ae8fbe8b3a5d7c35af50500382f"
       },
       "copies": {
         "etcd": {
           "image": "quay.io/coreos/etcd",
-          "tag": "v3.6.16",
-          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+          "tag": "v3.6.17",
+          "digest": "sha256:316f5d367455f75a327f9dc72f669cbf645651859fa2e272f692a1f2dee6f5c9"
         }
       },
       "packages": {
@@ -345,13 +345,13 @@
       "base": {
         "image": "postgres",
         "tag": "15.20-trixie",
-        "digest": "sha256:2663a9f0fde52de94f5dad3603a1942359f49472f1017c1a6d64f66bfedacb40"
+        "digest": "sha256:8cf673eb99f8b9042c9078ee4ca0e775428c77097e9d999bfc9ba4b4347f5733"
       },
       "copies": {
         "etcd": {
           "image": "quay.io/coreos/etcd",
-          "tag": "v3.6.16",
-          "digest": "sha256:a9c7cc12156f4b26ca41f0b57ba5b76c45037ff6c1e47ea3d68cb7908d48a965"
+          "tag": "v3.6.17",
+          "digest": "sha256:316f5d367455f75a327f9dc72f669cbf645651859fa2e272f692a1f2dee6f5c9"
         }
       },
       "packages": {

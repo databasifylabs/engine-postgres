@@ -3,3 +3,18 @@ CVE-2026-76844
 CVE-2026-85091
 # golang.org/x/net v0.61.0 in etcd and etcdctl 3.6.16 from the official etcd image, until an etcd release takes 0.62.0.
 CVE-2026-78661
+# libgssapi-krb5-2, libk5crypto3, libkrb5-3 and libkrb5support0 in the Debian base image, until the official image ships krb5 1.21.3-5+deb13u2.
+CVE-2026-71199
+CVE-2026-71200
+CVE-2026-107364
+CVE-2026-112315
+CVE-2026-112316
+CVE-2026-112317
+CVE-2026-112318
+CVE-2026-112319
+CVE-2026-112320
+CVE-2026-112321
+CVE-2026-112322
+CVE-2026-112323
+CVE-2026-118380
+CVE-2026-119079
