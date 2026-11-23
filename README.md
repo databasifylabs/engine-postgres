@@ -13,6 +13,8 @@ The PostgreSQL engine for [Databasify](https://github.com/databasifylabs/databas
 
 Each image is the official `postgres` image plus its tools and `databasify`, the [engine SDK](https://github.com/databasifylabs/engine-sdk) 1.0 runtime that runs as PID 1. Images are published as `ghcr.io/databasifylabs/databasify-postgres`.
 
+The image also ships the curated PGDG extension packages pinned in `versions.json`. Nothing is enabled by default; the app's extension catalog decides what users can enable.
+
 Engine behaviour lives in the Databasify app: its PHP driver for this engine runs Bash scripts inside the container through the runtime. This repository changes only when the database or one of its tools moves to a new version.
 
 ## Lines
@@ -36,6 +38,7 @@ PostgreSQL 15, 16, 17 and 18. Each line takes the newest release of its major an
 | Fork (one-shot copy) | ✓ |
 | Query insights | `pg_stat_statements` |
 | Host tuning | ✓ |
+| Extensions | about 146 on 18 (46 built-in, the rest from 86 PGDG packages), enabled per database |
 
 ## Ports
 
